@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adele"
+    android:orientation="vertical"
+
+    tools:context="com.example.truon.music_app.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chúc bạn nghe nhạc vui vẻ"
+        android:textColor="#ff00ff"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autotxt"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:gravity="center"
+        android:hint="Search" />
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="#bb02ff"
+        android:divider="#242424"
+        android:dividerHeight="1dp" />
+</LinearLayout>
